@@ -3,6 +3,55 @@ const fs = require("fs");
 
 
 const questions = [
+    {
+        type: "input",
+        name: "github",
+        message: "Please enter your GitHub username: "
+    },
+    {
+        type: "input",
+        name: "title",
+        message: "What is the title of your repository? "
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Please give a description of the program: "
+    },
+    {
+        type: "input",
+        name: "title",
+        message: "What is the title of your repository? "
+    },
+    {
+        type: "input",
+        name: "installation",
+        message: "What command will be used to install dependencies of the project? ",
+        default: "npm install"
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "What should the user be aware of for usage with this application? ",
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "What license will your project have? ",
+        options: ["GNU GPLv3", "Mozilla Public 2.0", "Apache 2.0", "MIT", "None"]
+    },
+    {
+        type: "input",
+        name: "contributers",
+        message: "What should contributers know about using the repo? "
+    },
+    {
+        type: "input",
+        name: "test",
+        messaage: "What command should be used to run tests fro application? ",
+        default: "npm test"
+    },
+
 
 ];
 
