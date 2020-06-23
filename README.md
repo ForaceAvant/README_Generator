@@ -1,10 +1,10 @@
 
-# README_Generator
-
+# README_Generator created by ForaceAvant
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.come/ForaceAvant/README_Generator)
 
 ## Description
 
-Creates a README.md file for a users repository.
+Creates a README.md file for the users repository.
 
 ## Table of Content
 
@@ -20,7 +20,7 @@ To install dependencies, run: npm install
 
 ## Usage
 
-To use this application correctly the user must run the command "node index.js" in the terminal and then answer the inquiries to populate a README.md file.
+User must enter the command "node index.js" into the terminal after installing dependencies. Then the user must answer the inquiries in the terminal to populate the README.md file.
 
 ## License
     
@@ -28,7 +28,7 @@ To use this application correctly the user must run the command "node index.js" 
 
 ## Contributing
 
-Please follow the Contributor Covenant when working with this repository.
+Please follow Contributor Covenant when contributing to the repository.
 
 ## Tests
 
@@ -36,4 +36,7 @@ To run tests run the command: npm test
 
 ## Questions
 
-If you have any questions on the repo contact ForaceAvant
+If you have any questions on the repo contact ForaceAvant at themattavant@gmail.com
+
+
+![ForaceAvant](https://avatars2.githubusercontent.com/u/59487000?v=4)

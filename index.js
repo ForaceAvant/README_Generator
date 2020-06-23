@@ -11,6 +11,11 @@ const questions = [
     },
     {
         type: "input",
+        name: "email",
+        message: "Please enter your email: "
+    },
+    {
+        type: "input",
         name: "title",
         message: "What is the title of your repository? "
     },
@@ -44,7 +49,7 @@ const questions = [
     {
         type: "input",
         name: "test",
-        message: "What command should be used to run tests fro application? ",
+        message: "What command should be used to run tests from application? ",
         default: "npm test"
     },
 
