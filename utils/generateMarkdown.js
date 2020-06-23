@@ -52,6 +52,7 @@ To install dependencies, run: ${data.installation}
 ${data.usage}
 
 ${licenseLine(data.license)}
+
 [![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)](https://github.come/${data.github}/${data.title})
 
 ## Contributing
