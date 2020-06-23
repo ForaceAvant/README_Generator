@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
 const questions = [
@@ -20,11 +21,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "title",
-        message: "What is the title of your repository? "
-    },
-    {
-        type: "input",
         name: "installation",
         message: "What command will be used to install dependencies of the project? ",
         default: "npm install"
@@ -38,7 +34,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "What license will your project have? ",
-        options: ["GNU GPLv3", "Mozilla Public 2.0", "Apache 2.0", "MIT", "None"]
+        choices: ["GNU GPLv3", "Mozilla Public 2.0", "Apache 2.0", "MIT", "None"]
     },
     {
         type: "input",
@@ -48,7 +44,7 @@ const questions = [
     {
         type: "input",
         name: "test",
-        messaage: "What command should be used to run tests fro application? ",
+        message: "What command should be used to run tests fro application? ",
         default: "npm test"
     },
 
@@ -56,10 +52,16 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+    return fs.writeFile(fileName, data, (err) => {
+        if (err) throw err;
+        console.log("The README has been generated!");
+    })
 }
 
 function init() {
-
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile("README.md", generateMarkdown({...answers}));
+    });
 }
 
 init();
